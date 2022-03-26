@@ -5,13 +5,21 @@
 Efficient data transformation from json, csv and other file formats to parquet for further data analytics and cloud based storage.
 
 -- Data inputs into S3 bucket trigger Lambda function spinning EC2 machine with preconfigured Airflow framework for data flow orchestration running in Docker container. 
+
 -- Airflow DAG starts EMR cluster
+
 -- Spark SBT project submit call starts/schedules all incoming batch data for transformation in EMR(Spark) cluster.
+
 -- Transformed data parquet files stored in S3 bucket
+
 -- Additional Lambda function activates Glue crawler inferring parquet data into Athena for querying and further analytics
+
 -- Data analysis is done in Apache Superset spinned in Docker container
+
 -- All active machines to be stopped as soon as transformation jobs are complete to minimize final cloud cost
 
+
+_________________________________________________________________________________________________________________________________________________________________
 Additional settings are required to start Docker service at Linux OS boot. 
 
 1. SSH into EC2 Apache Airflow instance. Create .system file under home/etc/systemd/system/
