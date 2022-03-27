@@ -29,7 +29,8 @@ Example Superset Chart
 ![2 Charts](https://user-images.githubusercontent.com/88790752/160277827-6074fc10-e1b0-4fa2-bca1-9b2864f5fd13.jpg)
 
 _________________________________________________________________________________________________________________________________________________________________
-Additional settings are required to start Docker service at Linux OS boot. 
+
+Following bootstrap settings required to start Docker service at Linux OS boot
 
 1. SSH into EC2 Apache Airflow instance. Create .system file under home/etc/systemd/system/
 2. Use vi to open .system file and copy/paste:
