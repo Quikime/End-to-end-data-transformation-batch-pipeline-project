@@ -18,6 +18,15 @@ Efficient data transformation from json, csv and other file formats to parquet f
 
 -- All active machines to be stopped as soon as transformation jobs are complete to minimize final cloud cost
 
+_________________________________________________________________________________________________________________________________________________________________
+
+Example DAG steps
+
+![1 DAGs List](https://user-images.githubusercontent.com/88790752/160277820-147a3203-7d17-412c-87e6-4554a709df9e.jpg)
+
+Example Superset Chart
+
+![2 Charts](https://user-images.githubusercontent.com/88790752/160277827-6074fc10-e1b0-4fa2-bca1-9b2864f5fd13.jpg)
 
 _________________________________________________________________________________________________________________________________________________________________
 Additional settings are required to start Docker service at Linux OS boot. 
@@ -37,14 +46,3 @@ ExecStart=/usr/bin/docker-compose -f /home/ec2-user/docker-airflow -f docker-com
 
 [Install]
 WantedBy=multi-user.target
-
-
-_________________________________________________________________________________________________________________________________________________________________
-
-Example DAG steps
-
-![1 DAGs List](https://user-images.githubusercontent.com/88790752/160277820-147a3203-7d17-412c-87e6-4554a709df9e.jpg)
-
-Example Superset Chart
-
-![2 Charts](https://user-images.githubusercontent.com/88790752/160277827-6074fc10-e1b0-4fa2-bca1-9b2864f5fd13.jpg)
